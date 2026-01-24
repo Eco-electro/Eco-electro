@@ -1,0 +1,145 @@
+﻿Mmm/* Botones de categorías */
+a.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  background: #088a59;
+  color: #ffffff;
+  text-decoration: none;
+
+
+  border-radius: 10px;
+  padding: 16px 10px;        /* más chico */
+  text-align: center;
+
+
+  box-shadow: 0 3px 8px rgba(0,0,0,0.18);
+  transition: all 0.25s ease;
+}
+
+
+/* Título */
+a.card h3{
+  color: #ffffff;
+  margin: 0 0 6px 0;
+  font-size: 17px;          /* más chico */
+}
+
+
+/* Texto */
+a.card p{
+  color: #dcdcdc;
+  font-size: 13px;
+  margin: 0;
+}
+
+
+/* Hover */
+a.card:hover{
+  background: #066f47;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+/* Contenedor de botones */
+.categorias{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 28px;                 /* MUCHO más aire */
+  padding: 30px 20px;
+}
+
+
+/* Asegura separación vertical si el grid falla */
+.categorias a.card{
+  margin: 8px 0;
+}
+</style>
+</head>
+
+
+<body>
+
+
+<header>
+  <img src="logo.png" alt="Eco Electro">
+  <h1>Eco Electro</h1>
+  <p>Electrodomésticos nuevos y al mejor precio</p>
+  <p>Consultá stock y precios por WhatsApp</p>
+</header>
+
+
+<div class="container">
+<h2>Nuestros productos</h2>
+
+
+<div class="products">
+
+
+  <div class="categorias">
+
+
+    <a href="#heladeras" class="card">
+      <h3>🧊 Heladeras</h3>
+      <p>Ver stock disponible</p>
+    </a>
+
+
+    <a href="#freezers" class="card">
+      <h3>❄️ Freezers</h3>
+      <p>Ver stock disponible</p>
+    </a>
+
+
+    <a href="#aires" class="card">
+      <h3>🌬️ Aires Acondicionados</h3>
+      <p>Ver stock disponible</p>
+    </a>
+
+
+    <a href="#lavarropas" class="card">
+      <h3>🧺 Lavarropas</h3>
+      <p>Ver stock disponible</p>
+    </a>
+
+
+    <a href="#teles" class="card">
+      <h3>📺 Televisores</h3>
+      <p>Ver stock disponible</p>
+    </a>
+
+
+    <a href="#exhibidoras" class="card">
+      <h3>🏪 Exhibidoras Comerciales</h3>
+      <p>Ver stock disponible</p>
+    </a>
+
+
+    <a href="#otros" class="card">
+      <h3>📦 Otros Productos</h3>
+      <p>Ver stock disponible</p>
+    </a>
+
+
+  </div>
+
+
+</section>
+</div>
+</div>
+
+
+<a class="whatsapp" href="https://wa.me/5491136149509" target="_blank">💬 WhatsApp</a>
+
+
+<footer>
+  <p>📍 Juan jose paso 1027</p>
+  <p>📞 WhatsApp: 11 3614 9509</p>
+<p>Eco Electro © 2026 · Ventas por WhatsApp</p>
+</footer>
+
+
+</body>
+</html>
