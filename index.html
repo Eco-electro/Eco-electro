@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Eco Electro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* ===== RESET Y ESTILOS BASE ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Montserrat, sans-serif;
+    }
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: linear-gradient(135deg, #0aa96d, #088a59);
+      color: #fff;
+      text-align: center;
+      padding: 35px 15px;
+    }
+    header .logo {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1rem;
+    }
+
+    /* ===== SECCIÓN BOTONES ===== */
+    section.categorias {
+      flex: 1;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    section.categorias h2 {
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+      color: #088a59;
+    }
+    .botones-categorias {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .botones-categorias .btn-cat {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #088a59;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      transition: background 0.3s;
+    }
+    .botones-categorias .btn-cat:hover {
+      background-color: #0aa96d;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: auto;
+    }
+    footer p {
+      margin: 5px 0;
+      font-size: 0.9rem;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 600px) {
+      .botones-categorias .btn-cat {
+        padding: 12px 20px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="img/logo.png" alt="Eco Electro Logo" class="logo">
+    <p>Electrodomésticos y equipamiento comercial</p>
+  </header>
+
+  <!-- SECCIÓN DE BOTONES -->
+  <section class="categorias">
+    <h2>Catálogo de Productos</h2>
+    <div class="botones-categorias">
+      <a href="heladeras.html" class="btn-cat">Heladeras</a>
+      <a href="freezers.html" class="btn-cat">Freezers</a>
+      <a href="aires.html" class="btn-cat">Aires</a>
+      <a href="lavarropas.html" class="btn-cat">Lavarropas</a>
+      <a href="teles.html" class="btn-cat">Televisores</a>
+      <a href="exhibidoras.html" class="btn-cat">Exhibidoras</a>
+      <a href="otros.html" class="btn-cat">Otros</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Eco Electro © Todos los derechos reservados</p>
+    <p>Dirección: Juan José Paso 1027, Tristán Suárez, Ezeiza</p>
+    <p>Teléfono: +54 11 3614-9509</p>
+    <p>Consultas por WhatsApp</p>
+  </footer>
+
+</body>
+</html>
