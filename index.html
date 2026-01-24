@@ -48,11 +48,13 @@
       color: #088a59;
     }
     .botones-categorias {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 botones por fila */
+  justify-content: center;
+  gap: 20px; /* espacio entre botones */
+  max-width: 500px; /* ancho máximo para que no se estire demasiado */
+  margin: 0 auto; /* centra la grid */
+}
     .botones-categorias .btn-cat {
       display: inline-block;
       padding: 15px 30px;
