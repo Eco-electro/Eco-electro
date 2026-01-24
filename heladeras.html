@@ -15,14 +15,25 @@
     section.productos { flex:1; padding:40px 20px; text-align:center; }
     section.productos h2 { margin-bottom:30px; font-size:1.8rem; color:#088a59; }
     .cards-container { display:grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap:20px; max-width:1000px; margin:0 auto; }
-    .volver-inicio { margin-top:40px; }
-      display:inline-block; padding:12px 25px; background:#088a59; color:#fff; text-decoration:none; border-radius:10px;
-      transition: background 0.3s; font-weight:600;
-    }
-    .volver-inicio a:hover { background:#0aa96d; }
-    footer { background:#222; color:#fff; text-align:center; padding:25px 15px; margin-top:auto; }
-    footer p { margin:5px 0; font-size:0.9rem; }
+    .volver-inicio {
+  text-align: center;
+  margin: 40px 0;
+}
 
+.volver-inicio a {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #088a59;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.volver-inicio a:hover {
+  background-color: #0aa96d;
+}
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
