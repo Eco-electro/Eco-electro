@@ -36,7 +36,7 @@
       font-size: 1.1rem;
     }
 
-    /* ===== SECCIÓN BOTONES ===== */
+    /* ===== SECCIÓN CATEGORÍAS ===== */
     section.categorias {
       flex: 1;
       padding: 40px 20px;
@@ -48,13 +48,13 @@
       color: #088a59;
     }
     .botones-categorias {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 botones por fila */
-  justify-content: center;
-  gap: 20px; /* espacio entre botones */
-  max-width: 500px; /* ancho máximo para que no se estire demasiado */
-  margin: 0 auto; /* centra la grid */
-}
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      gap: 20px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
     .botones-categorias .btn-cat {
       display: inline-block;
       padding: 15px 30px;
@@ -67,6 +67,27 @@
     }
     .botones-categorias .btn-cat:hover {
       background-color: #0aa96d;
+    }
+
+    /* ===== SECCIÓN CELULARES Y CONSOLAS ===== */
+    section.celulares-consolas{
+      padding: 40px 20px;
+      background: #ffffff;
+      text-align: center;
+    }
+    section.celulares-consolas h2{
+      margin-bottom: 25px;
+      font-size: 1.6rem;
+      color: #088a59;
+    }
+    .botones-cycon{
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .botones-cycon .btn-cat{
+      min-width: 180px;
     }
 
     /* ===== FOOTER ===== */
@@ -99,7 +120,7 @@
     <p>Electrodomésticos y equipamiento comercial</p>
   </header>
 
-  <!-- SECCIÓN DE BOTONES -->
+  <!-- SECCIÓN DE CATEGORÍAS -->
   <section class="categorias">
     <h2>Catálogo de Productos</h2>
     <div class="botones-categorias">
@@ -110,6 +131,15 @@
       <a href="teles.html" class="btn-cat">Televisores</a>
       <a href="exhibidoras.html" class="btn-cat">Exhibidoras</a>
       <a href="otros.html" class="btn-cat">Otros</a>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CELULARES Y CONSOLAS -->
+  <section class="celulares-consolas">
+    <h2>Celulares y Consolas</h2>
+    <div class="botones-cycon">
+      <a href="celulares.html" class="btn-cat">Celulares</a>
+      <a href="consolas.html" class="btn-cat">Consolas</a>
     </div>
   </section>
 
